@@ -33,14 +33,24 @@ const reset = document.querySelector('.reset')
 decrease.addEventListener('click', function(){
     count--;
     output.textContent = count;
+    if(count < 0){
+        document.body.style.color = 'red';
+    }
 })
 
 increase.addEventListener('click', function(){
     count++;
     output.textContent = count;
+    if (count > 0){
+        document.body.style.color = 'green';
+
+    }
 })
 
 reset.addEventListener('click', function(){
     count = 0;
     output.textContent = count;
+    document.body.style.color = 'black';
+
+    
 })
