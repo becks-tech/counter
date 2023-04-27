@@ -1,10 +1,35 @@
-let output = document.getElementById("output");
-let counterPlus = document.querySelector(".increment");
-let counterMinus = document.querySelector(".decrement");
-let reset = document.querySelector(".reset")
-
 let count = 0;
-counterPlus = addEventListener('click', function(){
-    count++;
-    output.textContent = count;
-})
+//const btns = document.querySelectorAll('.btn');
+const output = document.querySelector('#output');
+
+const decrease = document.querySelector('.decrease')
+const increase = document.querySelector('.increase')
+const reset = document.querySelector('.reset')
+
+//btns.forEach(function(btn){
+//    btn.addEventListener('click',function(e){
+//        const styles = e.currentTarget.classList;
+//        if (styles.contains('decrease')){
+//            count--;
+//        }
+//        else if (styles.contains('increase')){
+//            count++;
+//        }
+//        else{
+//            count = 0;
+//        }
+//        output.textContent = count;
+//        if(count < 0){
+//            document.body.style.color = 'red';
+//        } else if (count > 0){
+//            document.body.style.color = 'green';
+//        } else {
+//            document.body.style.color = 'black';
+//        }
+//    })
+//    
+//})
+
+//decrease.addEventListener('click', function(){
+//    count--;
+//})
