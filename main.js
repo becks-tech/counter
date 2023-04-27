@@ -50,7 +50,7 @@ increase.addEventListener('click', function(){
 reset.addEventListener('click', function(){
     count = 0;
     output.textContent = count;
-    document.body.style.color = 'black';
+    document.body.style.color = 'white';
 
     
 })
