@@ -30,6 +30,17 @@ const reset = document.querySelector('.reset')
 //    
 //})
 
-//decrease.addEventListener('click', function(){
-//    count--;
-//})
+decrease.addEventListener('click', function(){
+    count--;
+    output.textContent = count;
+})
+
+increase.addEventListener('click', function(){
+    count++;
+    output.textContent = count;
+})
+
+reset.addEventListener('click', function(){
+    count = 0;
+    output.textContent = count;
+})
